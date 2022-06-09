@@ -1,13 +1,64 @@
-<h2>hello this will be the shark page</h2>
-
-<div class="page-container">
-  <div class="page-header">
-
+<div class='page-container'>
+  <div class='header-container'>
+    <div class='page-title'>
+      <h1 class='heading'>{{name}}</h1>
+    </div>
   </div>
-  <div class="image-container">
-    <div class="image" src="/media/cc0-images/grapefruit-slice-332-332.jpg"
-     alt="Image of a shark">
-      <img>
+  <div class='image-container'>
+    <img class='image' src={{imageRef}} alt='image of shark' />
+  </div>
+  <div class='facts-container'>
+    <div class='fact-box'>
+      <h2 class="fact-subhead">Appearance</h2>
+      {{appearance}} 
+    </div>
+    <div class='fact-box'>
+     <h2 class="fact-subhead">Habitat</h2>
+      {{habitat}} 
+    </div>
+    <div class='fact-box'>
+      <h2 class="fact-subhead">Behaviour</h2>
+      {{behaviour}} 
+    </div>
+  </div>
+  <div class='questions-container'>
+    <div class='question-form-container'>
+      <form method='POST' action='/questions/add' class='form'>
+        <textarea
+          class="question-box"
+          type='text'
+          id='question'
+          name='question'
+          rows="3"
+          placeholder='Ask our experts a question!'
+          value=''
+        /></textarea>
+      </form>
+      <button>Submit</button>
+    </div>
+      </form>
+        
+    <div class='current-questions'>
+      <div class='question-box'>
+        <p class='question-text'>How big is the shark?</p>
+      </div>
+      <div class='answer-box'>
+        <div class='expert-container'>
+          <div class='avatar'>
+            <img
+              class='image'
+              src='https://static.vecteezy.com/system/resources/thumbnails/002/002/332/small_2x/ablack-man-avatar-character-isolated-icon-free-vector.jpg'
+              alt='avatar'
+            />
+          </div>
+          <p class='name'>Zoe Bloomington</p>
+          <p class='expertise'>PhD Sharkology from Harvard</p>
+
+        </div>
+
+        <p class='answer-text'>Really big!</p>
+
+      </div>
     </div>
   </div>
 </div>
