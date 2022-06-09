@@ -1,3 +1,60 @@
 h1{
   color: red;
 }
+
+body{
+  margin:0 
+}
+
+
+.header-container{
+  height: 15rem;
+  background-color: black;
+  display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.heading{
+  color: white;
+  font-size: 3rem;
+  font-family: sans-serif;
+}
+
+.image-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.image{
+  max-width: 45rem;
+  margin: 1rem
+}
+
+.facts-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.fact-box{
+  padding: 1rem;
+  border-style: solid;
+  border-width: 0.15rem;
+  margin: 0.5rem;
+
+}
+.fact-subhead{
+  font-family: sans-serif;
+}
+
+.questions-container{
+  padding: 1rem;
+    border-style: solid;
+    border-width: 0.15rem;
+    margin: 0.5rem;
+}
+
+.question-box{
+  width: 60rem;
+}
