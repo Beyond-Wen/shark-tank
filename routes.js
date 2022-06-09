@@ -15,7 +15,7 @@ router.get('/sharks/:id', (req, res) => {
     .then((sharkData) => {
       console.log(sharkData)
       //the data that gets sent back from db.js once the function runs
-      res.render('sharkPage')
+      res.render('sharkPage', { sharkData })
     })
     .catch((err) => {
       console.error(err)
