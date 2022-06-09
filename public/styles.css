@@ -50,11 +50,50 @@ body{
 
 .questions-container{
   padding: 1rem;
-    border-style: solid;
     border-width: 0.15rem;
     margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.question-button-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.question-form-container{
+  display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.current-questions{
+  border-style: solid;
+  border-radius: 0.5rem;
+  border-color: lightgray;
 }
 
 .question-box{
-  width: 60rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+.answer-box{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.avatar-image{
+  max-height: 6rem;
+}
+
+.bio-text{
+  font-size: .8rem;
+    margin: 0;
 }
