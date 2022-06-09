@@ -3,7 +3,20 @@ const config = require('./knexfile')[environment]
 const connection = require('knex')(config)
 
 function getSharkInfo(sharkId, db = connection) {
-  return db('sharks').select().where('id', sharkId).first()
+  return db('sharks')
+    .join('questions', 'questions.shark_id', 'sharks.id')
+    .where('sharks.id', sharkId)
+    .select(
+      'sharks.id as sharkNumber',
+      'sharks.name as sharkName',
+      'sharks.behaviour as behaviour',
+      'sharks.habitat as habitat',
+      'sharks.appearance as appearance',
+      'sharks.imageRef as imageRef',
+      'questions.name as questionAsker',
+      'questions.question as question'
+    )
+    .first()
 }
 
 module.exports = {

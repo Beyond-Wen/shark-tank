@@ -12,6 +12,7 @@ router.get('/sharks/:id', (req, res) => {
   const sharkId = req.params.id
   db.getSharkInfo(sharkId)
     .then((sharkData) => {
+      console.log(sharkData)
       //the data that gets sent back from db.js once the function runs
       res.render('sharkPage', sharkData)
     })
