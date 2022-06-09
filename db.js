@@ -2,7 +2,11 @@ const environment = process.env.NODE_ENV || 'development'
 const config = require('./knexfile')[environment]
 const connection = require('knex')(config)
 
-module.exports = {
-
+function getSharkInfo(sharkId, db = connection) {
+  console.log(sharkId)
+  return db('sharks').select().where('id', sharkId).first()
 }
 
+module.exports = {
+  getSharkInfo,
+}

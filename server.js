@@ -1,9 +1,10 @@
 const express = require('express')
 const hbs = require('express-handlebars')
+const server = express()
 
 const userRoutes = require('./routes')
-
-const server = express()
+const path = require('path')
+server.use(express.static('public'))
 
 // Middleware
 server.engine('hbs', hbs.engine({ extname: 'hbs' }))
