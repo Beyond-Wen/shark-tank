@@ -15,6 +15,8 @@ exports.seed = async function (knex) {
         'They are aggressive hunters, feeding on smaller fish, octopuses, squid, and crustaceans. They do not actively seek out human prey, but are very defensive and will attack when provoked.',
       appearance:
         'They are gray-brown to olive-green on top with off-white undersides, and they have heavily serrated, triangular teeth. Their extra-tall, pointed dorsal fins are easily identifiable.',
+      imageRef:
+        'https://en.wikipedia.org/wiki/Hammerhead_shark#/media/File:Scalloped_Hammerhead_Shark_Sphyrna_Lewini_(226845659).jpeg',
     },
     {
       id: 2,
@@ -22,6 +24,8 @@ exports.seed = async function (knex) {
       habitat: 'sdfvds',
       behaviour: 'hfdlfadsjf',
       appearance: 'fadfsfsdf',
+      imageRef:
+        'https://cdn.britannica.com/70/227470-050-A20D1993/Goblin-shark-Mitsukurina-owstoni-Tokyo-Japan.jpg',
     },
     {
       id: 3,
@@ -32,6 +36,8 @@ exports.seed = async function (knex) {
         'Great White Sharks engage in a number of behavioural and social activities, ranging from courtship to complex social behaviour. White sharks are generally very curious; they display intelligence and they even socialize if the situation demands it. They are ambush predators and therefore a hunting strategy such as breeching is an efficient technique used to ensure a kill. Seals are very agile and this ambush tactic is the most effective way to ensure a kill.',
       appearance:
         'White sharks are large bulky fishes with a body shaped like a blunt torpedo. They have a sharply pointed conical snout, large pectoral and dorsal fins, and a strong crescent-shaped tail. Only the belly of white sharks is whitish.',
+      imageRef:
+        'https://thumbs.dreamstime.com/b/great-white-shark-big-blue-67298087.jpg',
     },
     // {
     //   id: 4,
