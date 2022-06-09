@@ -10,11 +10,10 @@ router.get('/', (req, res) => {
 
 router.get('/sharks/:id', (req, res) => {
   const sharkId = req.params.id
-  console.log(sharkId)
   db.getSharkInfo(sharkId)
     .then((sharkData) => {
       //the data that gets sent back from db.js once the function runs
-      res.render('sharkPage', sharkData)
+      res.render('sharkPage', { sharkData })
     })
     .catch((err) => {
       console.error(err)
