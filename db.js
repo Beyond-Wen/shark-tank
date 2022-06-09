@@ -3,7 +3,6 @@ const config = require('./knexfile')[environment]
 const connection = require('knex')(config)
 
 function getSharkInfo(sharkId, db = connection) {
-  console.log(sharkId)
   return db('sharks').select().where('id', sharkId).first()
 }
 
