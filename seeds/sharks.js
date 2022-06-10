@@ -16,16 +16,18 @@ exports.seed = async function (knex) {
       appearance:
         'They are gray-brown to olive-green on top with off-white undersides, and they have heavily serrated, triangular teeth. Their extra-tall, pointed dorsal fins are easily identifiable.',
       imageRef:
-        'https://en.wikipedia.org/wiki/Hammerhead_shark#/media/File:Scalloped_Hammerhead_Shark_Sphyrna_Lewini_(226845659).jpeg',
+        'https://img.rezdy.com/PRODUCT_IMAGE/12835/Scalloped_hammerhead_Christopher_Dascher.jpg',
     },
     {
       id: 2,
       name: 'Goblin Shark',
-      habitat: 'sdfvds',
-      behaviour: 'hfdlfadsjf',
-      appearance: 'fadfsfsdf',
+      habitat:
+        'The goblin shark is a fascinating species that lives in the open ocean from near the surface down to depths of at least 4265 feet (1300 m). Like many species with a deep-sea affinity, scientists believe goblin sharks only come near the surface at night and spend most of their lives in the dark.',
+      behaviour: `Scientists don't know much about the behavior of these rarely seen animals. But they believe that goblin sharks are solitary, and are most active in the morning and evening. These animals are likely sluggish creatures, which can make it hard to chase food.`,
+      appearance:
+        'The Goblin Shark has a shovel-like snout, flabby body, and a tail with a weakly developed lower lobe. One of the distinctive features of the Goblin Shark is its protrusible mouth. The mouth can retract to a position under the eye, or extend forward under the snout.',
       imageRef:
-        'https://cdn.britannica.com/70/227470-050-A20D1993/Goblin-shark-Mitsukurina-owstoni-Tokyo-Japan.jpg',
+        'https://i.natgeofe.com/k/ea4142c2-3b11-4cc0-99b9-bf3a37073ba1/goblin-shark-jaw.jpg',
     },
     {
       id: 3,
@@ -37,13 +39,16 @@ exports.seed = async function (knex) {
       appearance:
         'White sharks are large bulky fishes with a body shaped like a blunt torpedo. They have a sharply pointed conical snout, large pectoral and dorsal fins, and a strong crescent-shaped tail. Only the belly of white sharks is whitish.',
       imageRef:
-        'https://thumbs.dreamstime.com/b/great-white-shark-big-blue-67298087.jpg',
+        'https://th-thumbnailer.cdn-si-edu.com/JSCi8yHXWnaczxVFAYrDwuiPqLk=/fit-in/1600x0/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer/ae/98/ae980f74-fa29-4c42-9aff-eea13c2c1971/great_white_shark_south_africa.jpg',
     },
-    // {
-    //   id: 4,
-    //   name: 'tiger',
-    //   facts_Id: 004,
-    // },
+    {
+      id: 4,
+      name: 'Reggae Shark',
+      habitat: `He lives off the coast of Jamaica`,
+      behaviour: `Reggae Shark doesn't want to eat ya, he just wants your ganja.`,
+      appearance: `He has dreadlocks under his Rastafarian hat.`,
+      imageRef: `https://ih1.redbubble.net/image.192134480.2932/flat,750x,075,f-pad,750x1000,f8f8f8.u7.jpg`,
+    },
     // {
     //   id: 5,
     //   name: 'leopard',
@@ -81,7 +86,7 @@ exports.seed = async function (knex) {
     // },
     // {
     //   id: 12,
-    //   name: 'reggae',
+    //   name: 'werewolf shark',
     //   facts_Id: 011,
     // },
     // {

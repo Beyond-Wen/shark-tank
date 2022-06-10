@@ -2,6 +2,8 @@ const environment = process.env.NODE_ENV || 'development'
 const config = require('./knexfile')[environment]
 const connection = require('knex')(config)
 
+//add a join to get the questions that are seeded in the questions table
+
 function getSharkInfo(sharkId, db = connection) {
   return db('sharks')
     .join('questions', 'questions.shark_id', 'sharks.id')
