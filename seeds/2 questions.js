@@ -15,5 +15,11 @@ exports.seed = async function (knex) {
       shark_id: 3,
       name: 'Ayoung',
     },
+    {
+      id: 5,
+      question: `Your favourite type of ganja?`,
+      shark_id: 4,
+      name: 'Ayoung',
+    },
   ])
 }
