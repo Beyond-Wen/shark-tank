@@ -20,6 +20,17 @@ function getSharkInfo(sharkId, db = connection) {
     )
 }
 
+function addNewQuestion(question, db = connection) {
+  console.log(question)
+  const newQuestion = {
+    name: question.name,
+    question: question.question,
+    shark_id: question.id,
+  }
+  return db('questions').insert(newQuestion)
+}
+
 module.exports = {
   getSharkInfo,
+  addNewQuestion,
 }
