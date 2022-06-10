@@ -1,7 +1,8 @@
 <div class='page-container'>
   <div class='header-container'>
     <div class='page-title'>
-      <h1 class='heading'>{{name}}</h1>
+          
+      <h1 class='heading'>{{sharkName}}</h1>
     </div>
   </div>
   <div class='image-container'>
@@ -21,32 +22,31 @@
       {{behaviour}} 
     </div>
   </div>
+ 
   <div class='questions-container'>
+    
     <div class="question-button-container">
         <div class='question-form-container'>
           <div class="question-form-box">
-    <form method='POST' action='/questions/add' class='form'>
-        <textarea
-          class="question-box"
-          type='text'
-          id='question'
-          name='question'
-          rows="5"
-          placeholder='Ask our experts a question!'
-          value=''
-        /></textarea>
-      </form>
-
+            <form method='POST' action='/questions/add' class='form'>
+                <textarea
+                  class="question-textarea"
+                  type='text'
+                  id='question'
+                  name='question'
+                  rows="5"
+                  placeholder='Ask our experts a question!'
+                  value=''
+                /></textarea>
+              </form>
+            </div>
+            <div class="button-container">
+                  <button>Submit</button>
+            </div>
           </div>
-  
-      <div class="button-container">
-            <button>Submit</button>
-      </div>
-    </div>
-      </form>
-
-   
+           {{#each question}}
     <div class='current-questions'>
+ 
       <div class="'question-answer-dyad">
 <div class='question-box'>
   <div class='user-container'>
@@ -58,11 +58,10 @@
             />
           </div>
           <div class="avatar-bio">
-          {{!-- <p class='bio-text'>Zoe Bloomington</p>
-          <p class='bio-text'>PhD Sharkology from Harvard</p> --}}
+          <p class='bio-text'>{{ questionAsker }}</p>
           </div>
         </div>
-        <p class='question-text'>How big is the shark?</p>
+        <p class='question-text'>{{ question }}</p>
       </div>
       <div class='answer-box'>
         <div class='expert-container'>
@@ -78,14 +77,14 @@
           <p class='bio-text'>PhD Sharkology from Harvard</p>
           </div>
         </div>
-        <p class='answer-text'>Really big!</p>
-
+        <p class='answer-text'>Answer text goes here</p>
       </div>
-
       </div>
-      
     </div>
-
      </div>
+     {{/each}}
+     {{!-- enss --}}
   </div>
+  
 </div>
+

@@ -16,7 +16,6 @@ function getSharkInfo(sharkId, db = connection) {
       'questions.name as questionAsker',
       'questions.question as question'
     )
-    .first()
 }
 
 module.exports = {

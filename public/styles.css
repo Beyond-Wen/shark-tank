@@ -76,6 +76,13 @@ body{
   border-color: lightgray;
 }
 
+.question-textarea{
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-direction: column;
+}
+
 .question-box{
   display: flex;
   flex-direction: row;
