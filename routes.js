@@ -33,7 +33,22 @@ router.get('/sharks/:id', (req, res) => {
     })
 })
 
-//specific shark page that links to an hbs template
+//post question to db
+
+router.post('/sharks/add', (req, res) => {
+  const { name, question, id } = req.body
+  const newQuestion = { name, question, id }
+
+  db.addNewQuestion(newQuestion)
+    .then((result) => {
+      console.log(result)
+      res.redirect(`/`)
+    })
+    .catch((err) => {
+      console.error(err)
+      res.status(500).send('Server error')
+    })
+})
 
 //stretch
 //answer question form

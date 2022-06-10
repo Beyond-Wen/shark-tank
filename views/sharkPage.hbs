@@ -28,7 +28,10 @@
     <div class="question-button-container">
         <div class='question-form-container'>
           <div class="question-form-box">
-            <form method='POST' action='/questions/add' class='form'>
+            <form method='POST' action='/sharks/add' class='form'>
+              <input type="hidden" name="id" value="{{sharkNumber}}">
+
+            <input type="text" id="name" name="name" placeholder="name">
                 <textarea
                   class="question-textarea"
                   type='text'
@@ -38,11 +41,13 @@
                   placeholder='Ask our experts a question!'
                   value=''
                 /></textarea>
+                 <div class="button-container">
+                <input type="submit" value="Submit">
+            </div>
               </form>
+              
             </div>
-            <div class="button-container">
-                  <button>Submit</button>
-            </div>
+           
           </div>
            {{#each question}}
     <div class='current-questions'>
