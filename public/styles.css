@@ -104,3 +104,15 @@ body{
   font-size: .8rem;
     margin: 0;
 }
+
+.shark-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr
+}
+.a{
+
+  padding: 1rem;
+  border-width: 0.15rem;
+  margin: 0.5rem;
+
+}
