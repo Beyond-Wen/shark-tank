@@ -1,3 +1,4 @@
+const { queryAllByAltText } = require('@testing-library/dom')
 const express = require('express')
 
 const db = require('./db')
@@ -12,9 +13,19 @@ router.get('/sharks/:id', (req, res) => {
   const sharkId = req.params.id
   db.getSharkInfo(sharkId)
     .then((sharkData) => {
-      console.log(sharkData)
-      //the data that gets sent back from db.js once the function runs
-      res.render('sharkPage', sharkData)
+      let singleShark = {}
+      let questionArray = []
+
+      for (let i = 0; i < sharkData.length; i++) {
+        let questionObject = {}
+        questionObject.questionAsker = sharkData[i].questionAsker
+        questionObject.question = sharkData[i].question
+
+        questionArray.push(questionObject)
+      }
+      singleShark = sharkData[0]
+      singleShark.question = questionArray
+      res.render('sharkPage', singleShark)
     })
     .catch((err) => {
       console.error(err)
