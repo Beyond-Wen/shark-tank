@@ -1,24 +1,5 @@
-# Boilerplate: Knex.js
+# week 3 team project
 
-Phase 1 boilerplate project with:
+## Shark Tank
 
- - Express
- - Knex
- - SQLite3
- - Express Handlebars
- - body-parser
- - Jest
- - nodemon
-
-
-## Install
-
-```
-npm install
-npx knex migrate:latest
-npx knex seed:run
-npm run dev
-```
-
-Be sure to check out the other npm scripts too.
-
+A shark spotting and information website.
